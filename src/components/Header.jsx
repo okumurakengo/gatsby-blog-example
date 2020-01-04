@@ -1,6 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import { useStaticQuery, Link, graphql } from "gatsby"
+import { useStaticQuery, Link, graphql, withPrefix } from "gatsby"
 import styles from "../styles/header.module.css"
 
 export default ({ page }) => {
@@ -34,7 +34,14 @@ export default ({ page }) => {
         ]}
       />
       <header>
-        {page === "top" && <div className={styles.headerImg}>&nbsp;</div>}
+        {page === "top" && (
+          <div
+            className={styles.headerImg}
+            style={{ backgroundImage: `url(${withPrefix("header.png")}` }}
+          >
+            &nbsp;
+          </div>
+        )}
         <div className={styles.headerBox}>
           <h1>
             <Link to="/">{title}</Link>

@@ -14,9 +14,11 @@
 
 > Here's an example of a gatsbyjs blog like wordpress
 
-![](https://raw.githubusercontent.com/okumurakengo/images/master/gatsby-blog-example/image.png)
+### 🏠 [Homepage](https://okumurakengo.github.io/gatsby-blog-example/)
 
-### 🏠 [Homepage](todo)
+https://okumurakengo.github.io/gatsby-blog-example/
+
+![](https://raw.githubusercontent.com/okumurakengo/images/master/gatsby-blog-example/image.png)
 
 ## Install
 
