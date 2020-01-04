@@ -5,5 +5,19 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "ホゲホゲブログ",
+    description: "ホゲホゲによるブログです",
+  },
+  plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/blog`,
+        name: "blog",
+      },
+    },
+    "gatsby-transformer-remark",
+    "gatsby-plugin-react-helmet",
+  ],
 }
